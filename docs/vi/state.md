@@ -1,6 +1,6 @@
 # State
 
-### Single State Tree - Cây trạng thái đơn
+### Single State Tree
 
 Vuex sử dụng **cây trạng thái đơn** - về bản chất, nó là một đối tượng JS lưu trữ toàn bộ state mà ứng dụng sử dụng đến, và hoạt động như là *"nguồn chân lý duy nhất"*. Đồng nghĩa với việc, mỗi ứng dụng chỉ sử dụng duy nhất một store. Một cây trạng thái đơn giúp bạn dễ dàng xác định một state cụ thể và cho phép chúng ta dễ dàng tạo một snapshot cho state hiện tại của ứng dụng, nhằm mục đích gỡ lỗi khi cần.
 
