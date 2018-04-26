@@ -175,4 +175,4 @@ actions: {
 }
 ```
 
-> It's possible for a `store.dispatch` to trigger multiple action handlers in different modules. In such a case the returned value will be a Promise that resolves when all triggered handlers have been resolved.
+> Một hàm `store.dispatch` có thể kích hoạt nhiều hàm action handler trong các module khác nhau. Trong trường hợp đó giá trị trả về sẽ là một Promise có tham số resolves xác định dù tất cả những hàm handler đã được resolve.
