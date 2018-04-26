@@ -65,6 +65,7 @@ computed: {
 }
 ```
 
+
 Note that getters accessed as properties are cached as part of Vue's reactivity system.
 
 ### Sử dụng getter như là một hàm
@@ -84,7 +85,7 @@ getters: {
 store.getters.getTodoById(2) // -> { id: 2, text: '...', done: false }
 ```
 
-Note that getters accessed via methods will run each time you call them, and the result is not cached.
+Chú ý rằng các getters truy cập thông qua methods sẽ chạy mới mỗi khi được gọi, và kết quả trả về sẽ không được cache.
 
 ### Hàm hỗ trợ `mapGetters`
 
