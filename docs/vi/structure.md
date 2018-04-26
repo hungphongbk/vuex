@@ -10,7 +10,7 @@ Vuex không có một ràng buộc chặt chẽ nào về cách thức bạn t�
 
 Chỉ cần bạn tuân theo 3 quy tắc bắt buộc phía trên, việc tổ chức mã nguồn dự án như thế nào là tùy ở bạn. Có một khuyến nghị nhỏ là nếu tệp tin store của bạn trở nên quá lớn theo thời gian, bạn hoàn toàn có thể chia tách action, mutation và getters thành những tệp tin riêng lẻ.
 
-For any non-trivial app, we will likely need to leverage modules. Here's an example project structure:
+Với những app tương đối lớn, chúng ta sẽ cần thiết phải phân tầng module kĩ càng. Sau đây là ví dụ :
 
 ``` bash
 ├── index.html
