@@ -304,7 +304,7 @@ Có những trường hợp mà một khai báo module có thể có nhiều ins
 - Tạo nhiều store sử dụng cùng một module (ví dụ, để tránh hiện tượng [stateful singletons trong SSR](https://ssr.vuejs.org/en/structure.html#avoid-stateful-singletons) - hiểu nôm na là nhiều singleton sử dụng chung một thực thể trạng thái, khi tùy chọn `runInNewContext` có giá trị là `false` hoặc `'once'`);
 - Đăng kí một module nhiều lần trong cùng một store.
 
-If we use a plain object to declare the state of the module, then that state object will be shared by reference and cause cross store/module state pollution when it's mutated.
+Nếu ta dùng một đối tượng rỗng để miêu tả các state của module, thì state đó sẽ được chia sẻ bằng tham chiếu và gây ra state xấu giữa các store/module khi chúng thay đổi (mutate).
 
 Vấn đề này cũng giống như vấn đề xảy ra với `data` bên trong Vue component. Thành ra giải pháp cũng tương tự - sử dụng hàm khi khai báo state cho module (hỗ trợ ở phiên bản Vuex 2.3.0+ trở lên):
 
